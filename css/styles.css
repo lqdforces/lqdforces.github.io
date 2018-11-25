@@ -1,0 +1,200 @@
+#content {
+	font-size: 15px !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+.official-content {
+	display: none;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+#boxed {
+	background-color: #ffffff;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
+	border-bottom: none;
+	box-shadow: 0 4px 5px 2px rgba(0,0,0,.3);
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
+
+.li-loading {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 18px;
+  margin-top: 10px !important;
+  position: relative;
+}
+
+.title-loading {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 30px;
+  position: relative;
+}
+
+.hr-dashed {
+	border-top: 1px dashed #e5e5e5;
+}
+
+
+/* ******************************
+BUTTONS
+****************************** */
+.btn {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 16px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+    background-image: none;
+    background-color: #E0E0E0;
+    
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+         -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+/* ----- BUTTON STATES ----- */
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+        outline: none;
+    }
+
+    .btn:hover,
+    .btn:focus,
+    .btn.focus {
+        color: #212121;
+        text-decoration: none;
+    }
+
+    .btn:active,
+    .btn.active {
+        outline: 0;
+        background-image: none;
+    }
+
+    .btn.disabled,
+    .btn[disabled],
+    fieldset[disabled] .btn {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+/* ----- ALTERNATE OPTIONS ----- */
+/* PRIMARY */
+    .btn-primary {
+        color: #ffffff;
+        background-color: #3F51B5;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary.focus,
+    .btn-primary:active,
+    .btn-primary.active {
+        color: #ffffff;
+        background-color: #3949AB;
+    }
+
+/* ACCENT */
+    .btn-accent {
+        color: #ffffff;
+        background-color: #EC407A;
+    }
+
+    .btn-accent:hover,
+    .btn-accent:focus,
+    .btn-accent.focus,
+    .btn-accent:active,
+    .btn-accent.active {
+        color: #ffffff;
+        background-color: #E91E63;
+    }
+
+/* SUCCESS */
+    .btn-success {
+        color: #ffffff;
+        background-color: #009688;
+    }
+
+    .btn-success:hover,
+    .btn-success:focus,
+    .btn-success.focus,
+    .btn-success:active,
+    .btn-success.active {
+        color: #ffffff;
+        background-color: #00897B;
+    }

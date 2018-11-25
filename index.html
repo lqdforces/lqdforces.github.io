@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LQDKHTutors</title>
+
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="all">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(() => {
+			const preloader = $(".preloader")
+			const officialContent = $(".official-content")
+
+			console.log(preloader)
+
+			setTimeout(() => {
+				for (let loader of preloader) $(loader).hide()
+				for (let content of officialContent) $(content).show()
+			}, 1000);
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="boxed" class="col-sm-10 col-sm-offset-1">
+			<!-- <center>
+				<a href="https://codeforces.com/group/tmdtnfa0l4/blog"><img width="50%" src="https://i.imgur.com/NKt5aNK.png"></a>
+			</center> -->
+
+			<legend>
+				<h1>
+					LQDKH Tutors 
+
+					<div class="pull-right">
+						<a href="./about-us.html"><button class="btn btn-primary">About us</button></a>
+					</div>
+				</h1>
+			</legend>
+
+			<div id="content" class="col-sm-12">
+				<legend><h2>Giới thiệu</h2></legend>
+				<div class="about">
+					<div class="preloader">
+						<div class="li-loading"></div>
+						<div class="li-loading"></div>
+						<div class="li-loading"></div>
+					</div>
+
+					<div class="official-content">
+						<p>Chào các bạn!</p>
+						<p>Trang này được thành lập bởi các học sinh chuyên Tin khóa 16 - 19, trường THPT chuyên Lê Quý Đôn. Đây là nơi công khai về thời gian diễn ra các contest, các bài viết hướng dẫn mới dành cho học sinh trường THPT chuyên Lê Quý Đôn.</p>
+						<p>
+							Nơi hoạt động chính của chúng tôi vẫn là nhóm trên Codeforces và nhóm chuyên Tin trên Facebook.
+							<ul>
+								<li>Tham gia các contest và đọc bài viết tại <a href="https://codeforces.com/group/tmdtnfa0l4/blog">LQDKH (codeforces)</a>.</li>
+								<li>Thắc mắc, hỏi bài tại <a href="https://www.facebook.com/groups/769517006449103/">Chuyên Tin LQDKH (facebook)</a>.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<legend><h2>Contests</h2></legend>
+				<ul>
+					<div class="preloader">
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+					</div>
+
+					<div class="official-content">
+						<li>
+							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/contest/233172">18/11/2018 - Khanh Hoa Educational Round 1</a>
+						</li>
+					</div>
+				</ul>
+
+				<legend><h2>Blog</h2></legend>
+				<ul>
+					<div class="preloader">
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+						<li class="li-loading"></li>
+					</div>
+
+					<div class="official-content">
+						<li>
+							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/blog/entry/3740">Tuyệt chiêu “dx – dy” khi loang trên ma trận</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/blog/entry/3709">Khanh Hoa Educational Round #1 Editorial</a>
+						</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
