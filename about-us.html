@@ -14,12 +14,12 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(() => {
-			const preloader = $(".preloader")
-			const officialContent = $(".official-content")
+			var preloader = $(".preloader")
+			var officialContent = $(".official-content")
 
-			setTimeout(() => {
-				for (let loader of preloader) $(loader).hide()
-				for (let content of officialContent) $(content).show()
+			setTimeout(function() {
+				for (var i = 0; i < preloader.length; ++i) $(preloader[i]).hide()
+				for (var i = 0; i < officialContent.length; ++i) $(officialContent[i]).show()
 			}, 500);
 		})
 	</script>
@@ -29,7 +29,7 @@
 		<div id="boxed" class="col-sm-12">
 			<legend>
 				<h1>
-					LQDKH Tutors 
+					LQDForces
 
 					<div class="pull-right">
 						<a href="./index.html"><button class="btn btn-primary">Home</button></a>
