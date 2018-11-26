@@ -12,45 +12,32 @@
 	<link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<!-- <script type="text/javascript">
-		$(document).ready(() => {
-			var preloader = $(".preloader")
-			var officialContent = $(".official-content")
-
-			setTimeout(function() {
-				for (var i = 0; i < preloader.length; ++i) $(preloader[i]).hide()
-				for (var i = 0; i < officialContent.length; ++i) $(officialContent[i]).show()
-			}, 500);
-		})
-	</script> -->
 </head>
 <body>
 	<div class="container">
 		<div id="boxed" class="col-sm-12">
-			<!-- <center>
-				<a href="https://codeforces.com/group/tmdtnfa0l4/blog"><img width="50%" src="https://i.imgur.com/NKt5aNK.png"></a>
-			</center> -->
+			<div class="web-header">
+				<legend>
+					<h1>
+						LQDForces
+						<div class="pull-right">
+							<a href="./index.html"><button class="btn btn-accent">Home</button></a>
+							<a href="./about-us.html"><button class="btn btn-primary">About us</button></a>
+						</div>
+					</h1>
+				</legend>
+			</div>
 
-			<legend>
-				<h1>
-					LQDForces
-
-					<div class="pull-right">
-						<a href="./index.html"><button class="btn btn-accent">Home</button></a>
-						<a href="./about-us.html"><button class="btn btn-primary">About us</button></a>
-					</div>
-				</h1>
-			</legend>
+			<div class="mobile-header">
+				<h1>LQDForces</h1>
+				<a href="./index.html"><button class="btn btn-sm btn-accent">Home</button></a>
+				<a href="./about-us.html"><button class="btn btn-sm btn-primary">About us</button></a>
+				<hr class="hr-dashed">
+			</div>
 
 			<div id="content" class="col-sm-12">
 				<legend><h2>Giới thiệu</h2></legend>
 				<div class="about">
-					<!-- <div class="preloader">
-						<div class="li-loading"></div>
-						<div class="li-loading"></div>
-						<div class="li-loading"></div>
-					</div> -->
-
 					<div class="official-content">
 						<p>Chào các bạn!</p>
 						<p>Trang này được thành lập bởi các học sinh chuyên Tin khóa 16 - 19, trường THPT chuyên Lê Quý Đôn. Đây là nơi công khai về thời gian diễn ra các contest, các bài viết hướng dẫn mới dành cho học sinh trường THPT chuyên Lê Quý Đôn.</p>
@@ -66,12 +53,6 @@
 
 				<legend><h2>Contests</h2></legend>
 				<ul>
-					<!-- <div class="preloader">
-						<li class="li-loading"></li>
-						<li class="li-loading"></li>
-						<li class="li-loading"></li>
-					</div> -->
-
 					<div class="official-content">
 						<li>
 							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/contest/233172">18/11/2018 - Khanh Hoa Educational Round 1</a>
@@ -81,13 +62,10 @@
 
 				<legend><h2>Blog</h2></legend>
 				<ul>
-					<!-- <div class="preloader">
-						<li class="li-loading"></li>
-						<li class="li-loading"></li>
-						<li class="li-loading"></li>
-					</div> -->
-
 					<div class="official-content">
+						<li>
+							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/blog/entry/3745">Indexable Segment Tree (phần 1)</a>
+						</li>
 						<li>
 							<a target="_blank" href="https://codeforces.com/group/tmdtnfa0l4/blog/entry/3740">Tuyệt chiêu “dx – dy” khi loang trên ma trận</a>
 						</li>
@@ -96,6 +74,16 @@
 						</li>
 					</div>
 				</ul>
+			</div>
+
+			<div class="col-sm-12">
+				<div id="footer">
+					<hr class="hr-dashed"/>
+					<center>
+						<small>LQDForces Archive written by <a target="_blank" href="https://rknguyen.me">RK Nguyen.</a></small><br>
+						<small>Copyright 2018 &copy; LQDKHTutors Inc. All rights reserved.</small>
+					</center>
+				</div>
 			</div>
 		</div>
 	</div>

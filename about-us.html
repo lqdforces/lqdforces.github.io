@@ -12,41 +12,32 @@
 	<link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<!-- <script type="text/javascript">
-		$(document).ready(() => {
-			var preloader = $(".preloader")
-			var officialContent = $(".official-content")
-
-			setTimeout(function() {
-				for (var i = 0; i < preloader.length; ++i) $(preloader[i]).hide()
-				for (var i = 0; i < officialContent.length; ++i) $(officialContent[i]).show()
-			}, 500);
-		})
-	</script> -->
 </head>
 <body>
 	<div class="container">
 		<div id="boxed" class="col-sm-12">
-			<legend>
-				<h1>
-					LQDForces
+			<div class="web-header">
+				<legend>
+					<h1>
+						LQDForces
+						<div class="pull-right">
+							<a href="./index.html"><button class="btn btn-primary">Home</button></a>
+							<a href="./about-us.html"><button class="btn btn-accent">About us</button></a>
+						</div>
+					</h1>
+				</legend>
+			</div>
 
-					<div class="pull-right">
-						<a href="./index.html"><button class="btn btn-primary">Home</button></a>
-						<a href="./about-us.html"><button class="btn btn-accent">About us</button></a>
-					</div>
-				</h1>
-			</legend>
+			<div class="mobile-header">
+				<h1>LQDForces</h1>
+				<a href="./index.html"><button class="btn btn-sm btn-primary">Home</button></a>
+				<a href="./about-us.html"><button class="btn btn-sm btn-accent">About us</button></a>
+				<hr class="hr-dashed">
+			</div>
 
 			<div id="content" class="col-sm-12">
 				<legend><h2>Sự tích</h2></legend>
 				<div class="about">
-					<!-- <div class="preloader">
-						<div class="li-loading"></div>
-						<div class="li-loading"></div>
-						<div class="li-loading"></div>
-					</div> -->
-
 					<div class="official-content">
 						<p>Vào một ngày trời không nắng cũng không mưa, bốn đứa chuyên Tin khoá 16-19 quyết định tạo các contest cho các khoá sau, dần dần mở rộng ra viết các bài viết truyền đạt kiến thức.</p>
 						<p>Dần dần các contest, bài viết ngày càng nhiều, điều này rất khó để kiểm soát. Vì vậy bốn đứa đã mở một hội nghị bàn tròn bàn tán quyết liệt trong 7749 ngày đưa ra quyết định thành lập trang này để tổng hợp mọi thứ và phân loại một cách logic hơn.</p>
@@ -57,12 +48,6 @@
 				<div class="col-sm-12">
 					<legend><h3>Khoá 16-19</h3></legend>
 					<div class="about">
-						<!-- <div class="preloader">
-							<div class="li-loading"></div>
-							<div class="li-loading"></div>
-							<div class="li-loading"></div>
-						</div> -->
-
 						<div class="official-content">
 							<ol>
 								<li>Nguyễn Minh Huy (<!-- <a target="_blank" href="https://www.facebook.com/rknguyen">Facebook</a>,  --><a target="_blank" href="https://codeforces.com/profile/nmhuy">CF: nmhuy</a>)</li>
@@ -72,6 +57,16 @@
 							</ol>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12">
+				<div id="footer">
+					<hr class="hr-dashed"/>
+					<center>
+						<small>LQDForces Archive written by <a target="_blank" href="https://rknguyen.me">RK Nguyen.</a></small><br>
+						<small>Copyright 2018 &copy; LQDKHTutors Inc. All rights reserved.</small>
+					</center>
 				</div>
 			</div>
 		</div>
